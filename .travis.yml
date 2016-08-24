@@ -8,7 +8,8 @@ rvm:
   - ruby-head
 
 script:
-  - ci/travis.sh
+  - chmod a+x ci/travis.sh
+  - sh ci/travis.sh
 
 bundler_args: --without development
 
