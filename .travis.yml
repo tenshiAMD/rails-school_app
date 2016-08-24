@@ -10,6 +10,7 @@ rvm:
 script:
   - chmod a+x ci/travis.sh
   - sh ci/travis.sh
+  - RAILS_ENV=test bundle exec rspec
 
 bundler_args: --without development
 
