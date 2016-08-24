@@ -6,7 +6,7 @@ begin
   CodeCoverage.wear! 'rails'
 rescue LoadError
   STDERR.puts 'Running without SimpleCov'
-end if ENV.key?('SIMPLE_COV_ENABLED')
+end
 
 require 'rspec/active_job'
 
