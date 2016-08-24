@@ -47,4 +47,3 @@ Rails.application.configure do
   # application.coffee, application.scss, and all non-JS/CSS in app/assets folder are already added.
   # Rails.application.config.assets.precompile += %w( search.js )
 end
-

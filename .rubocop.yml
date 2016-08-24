@@ -1,0 +1,55 @@
+# This is the configuration used to check the source code.
+
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - 'db/schema.rb'
+    - 'vendor/**/*'
+    - 'bin/**/*'
+    - 'test/fixtures/**/*'
+    - 'Guardfile'
+  # Makes it easier to find which cop is responsible for emitting the error
+  DisplayCopNames: true
+  TargetRubyVersion: 2.3
+
+Rails:
+  Enabled: true
+
+Lint/Debugger:
+  Exclude:
+    - debug.rb
+
+Style/FileName:
+  # Don't apply the rule to executables. It's better to match the gem name
+  # to the executable name.
+  Exclude:
+    - 'bin/*'
+
+Style/TrivialAccessors:
+  ExactNameMatch: true
+
+Style/Semicolon:
+  AllowAsExpressionSeparator: true
+
+Style/NumericLiterals:
+  MinDigits: 6
+
+# `$1` is shorter than `Regexp.last_match[1]`
+Style/PerlBackrefs:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Rails/HasAndBelongsToMany:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
