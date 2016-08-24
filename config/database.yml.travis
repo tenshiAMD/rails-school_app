@@ -1,4 +1,3 @@
 test:
-  adapter: sqlite3
-  database: ":memory:"
-  timeout: 500
+  adapter: postgresql
+  database: sample_test

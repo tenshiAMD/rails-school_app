@@ -104,6 +104,7 @@ source 'https://rails-assets.org' do
 end
 
 # Required gems
+gem 'pg'
 gem 'paperclip'
 gem 'paper_trail'
 gem 'cancancan'
