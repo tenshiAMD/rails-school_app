@@ -109,3 +109,4 @@ gem 'paperclip'
 gem 'paper_trail'
 gem 'cancancan'
 gem 'devise'
+gem 'coveralls', require: false
