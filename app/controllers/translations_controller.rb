@@ -2,7 +2,7 @@ class TranslationsController < ApplicationController
   respond_to :json
 
   # Don't redirects even a user is not authenticated
-  skip_before_action :authenticate_user!
+  # skip_before_action :authenticate_user!
 
   def show
     @locale = params[:locale].to_s.to_sym || I18n.config.locale
