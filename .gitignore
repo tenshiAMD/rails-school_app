@@ -24,6 +24,7 @@ dump.rdb
 
 # Ignore .yml config files
 /config/*.yml
+!/config/database.yml
 !/config/sidekiq.yml
 
 # Ignore application directories
