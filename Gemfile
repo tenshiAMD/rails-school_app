@@ -102,9 +102,16 @@ source 'https://rails-assets.org' do
 end
 
 # Required gems
-gem 'pg'
-gem 'paperclip'
+gem 'pg', '~> 0.21.0'
+gem 'paperclip', '~> 5.2.0'
 gem 'paper_trail'
 gem 'cancancan'
 gem 'devise'
 gem 'coveralls', require: false
+
+gem 'rails-html-sanitizer', '~> 1.0.4'
+gem 'rubyzip', '~> 1.2.1'
+gem 'sprockets', '~> 3.7.2'
+gem 'yard', '~> 0.9.11'
+gem 'nokogiri', '~> 1.8.2'
+gem 'loofah', '~> 2.2.1'
